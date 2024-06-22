@@ -37,7 +37,33 @@ const myFunction = function(){
 // console.log(typeof score);
 // console.log(typeof scoreValue);
 // console.log(typeof userEmail);
-console.log(typeof id);
-console.log(typeof myFunction);
-console.log(typeof myobj);
-console.log(typeof heros);
+// console.log(typeof id);
+// console.log(typeof myFunction);
+// console.log(typeof myobj);
+// console.log(typeof heros);
+
+// ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// Stack (Primitive), Heap (Non-Primitive)
+// Stack -> gives copy of the original
+// Heap -> gives the original(reference) of value
+
+let myYoutubeName = "hiteshchoudharydotcom"
+
+let anotherName = myYoutubeName
+anotherName = "chaiaurcode"
+
+console.log(anotherName);
+console.log(myYoutubeName);
+
+let userOne = {
+    email: "user@google.com",
+    upi: "user@ybl"
+}
+
+let userTwo = userOne
+
+userTwo.email = "prashu@google.com"
+
+console.log(userOne.email);
+console.log(userTwo.email);
