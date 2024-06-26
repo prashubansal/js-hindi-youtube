@@ -10,8 +10,8 @@
 const myNums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
 // const newNums = myNums.filter( (num) => {
-//    return num > 4
-// } )
+//     return num > 4
+//   })
 
 // const newNums = []
 
@@ -35,8 +35,10 @@ const books = [
     { title: 'Book Nine', genre: 'Non-Fiction', publish: 1981, edition: 1989 },
   ]; 
 
-//   const userBooks = books.filter( (bk) => bk.genre === 'History')
+  // const userBooks = books.filter( (bk) => bk.genre === 'History')
 
-  const userBooks = books.filter( (bk) => bk.publish > 2000 )
+  const userBooks = books.filter( (bk) => {
+      return bk.publish >= 1995 && bk.genre === 'History' 
+  })
   console.log(userBooks); 
 
