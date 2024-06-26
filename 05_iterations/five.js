@@ -1,3 +1,5 @@
+// "for each" loop => prototype of array
+
 const coding = ["js", "ruby", "java", "python", "cpp"]
 
 // coding.forEach( function (val){
@@ -14,9 +16,9 @@ const coding = ["js", "ruby", "java", "python", "cpp"]
 
 // coding.forEach(printMe)
 
-// coding.forEach( (item, index, arr) => {
-//     console.log(item, index, arr);
-// } )
+coding.forEach( (item, index, arr) => {
+    // console.log(item, index, arr);
+} )
 
 const myCoding = [
     {
@@ -35,4 +37,5 @@ const myCoding = [
 
 myCoding.forEach( (item) => {
     console.log(item.languageName);
+    // console.log(typeof item);
 } )
