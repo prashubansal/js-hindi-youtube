@@ -1,4 +1,6 @@
-// for of
+// "for of"
+// array, string, map => iterable
+// Onject => not iterable
 
 // ["", "", ""]
 // [{}, {}, {}]
@@ -20,12 +22,13 @@ const map = new Map()
 map.set('IN', "India")
 map.set('USA', "United States of America")
 map.set('FR', "France")
-map.set('IN', "India")
+map.set('IN', "USA")
 
 // console.log(map);
 
 for (const [key, value] of map) {
-    console.log(key, ':-', value);
+    // console.log(key);
+    // console.log(value);
 }
 
 const myObject = {
@@ -33,8 +36,9 @@ const myObject = {
     game2: 'Spiderman'
 }
 
-// for (const [key, value] of myObject) {
-//     console.log(key, ':-', value);
-// }
+for (const [key, value] of myObject) {
+    console.log(key, ':-', value);
+}
+
 
 
