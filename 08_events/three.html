@@ -7,21 +7,25 @@
 </head>
 <body>
     <h1>Chai aur Javascript</h1>
-    <button id="start">Start</button>
-    <button id="stop">Stop</button>
+    <div id="button">
+        <button id="stop">Stop</button>
+        <button id="start">Start</button>
+    </div>
 </body>
 <script>
+    let intervalId
+
     const sayDate = function(str){
         console.log(str, Date.now());
     }
-    const intervalId = setInterval(sayDate, 5000, "hi")
     
-    document.querySelector('#start').addEventListener('click', function(){
-        setInterval(sayDate, 5000, "hi")
+    document.getElementById('start').addEventListener('click', function(){
+        intervalId = setInterval(sayDate, 1000, "Hitesh")
+        console.log("STARTED");
     })
-    document.querySelector('#stop').addEventListener('click', function(){
+    document.getElementById('stop').addEventListener('click', function(){
         clearInterval(intervalId)
+        console.log("STOPPED");
     })
-
 </script>
 </html>
