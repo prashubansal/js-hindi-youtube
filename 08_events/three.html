@@ -20,11 +20,14 @@
     }
     
     document.getElementById('start').addEventListener('click', function(){
-        intervalId = setInterval(sayDate, 1000, "Hitesh")
-        console.log("STARTED");
+        if(!intervalId){
+            intervalId = setInterval(sayDate, 1000, "Hitesh")
+            console.log("STARTED");
+        }
     })
     document.getElementById('stop').addEventListener('click', function(){
         clearInterval(intervalId)
+        intervalId = null
         console.log("STOPPED");
     })
 </script>
