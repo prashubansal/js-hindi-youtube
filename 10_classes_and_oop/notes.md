@@ -11,10 +11,10 @@
 ## parts of OOP
 Object literal 
 
-- constructor function 
+- constructor function  
 - Prototypes
 - Classes
-- Instances (new, this)
+- Instances 
 
 ## 4 pillars
 Abstraction -> details hide kar dena(Eg: fetch)
