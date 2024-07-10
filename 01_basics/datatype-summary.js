@@ -1,69 +1,44 @@
-// Primitive 
+// Primitive
 
-// 7 types : String, Number, Boolean, null, undefined, Symbol, BigInt
-
-const score = 100
+// 7 types : String, Number, Boolean, Null, Undefined, Symbol, BigInt
+// JS is dynamically typed language
+// no need to specify the datatype of variable.
+const score = 100 
 const scoreValue = 100.3
 
 const isLoggedIn = false
 const outsideTemp = null
-let userEmail; //undefined
+let userEmail;
 
 const id = Symbol('123')
 const anotherId = Symbol('123')
 
 // console.log(id === anotherId);
 
-const bigNumber = 8748273419831797634576n 
+const bigNumber = 3465865646654544515155n
 
 
-// Reference  (Non Primitive)
+
+// Reference (Non Primitive)
 
 // Array, Objects, Functions
+// datatypes of all non primitive are Object
 
-const heros = ["shaktiman", "naagraj", "doga"];
-let myobj = {
-    name: "prashu",
+const heros = ["shaktiman", "naagraj", "doga"]
+let myObj = {
+    name: "hitesh",
     age: 22,
 }
 
 const myFunction = function(){
-    console.log("Hello World!");
+    console.log("Hello World");
 }
 
-// console.log(typeof bigNumber);
-// console.log(typeof outsideTemp);
-// console.log(typeof isLoggedIn);
-// console.log(typeof score);
-// console.log(typeof scoreValue);
-// console.log(typeof userEmail);
-// console.log(typeof id);
-// console.log(typeof myFunction);
-// console.log(typeof myobj);
-// console.log(typeof heros);
-
-// ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-
-// Stack (Primitive), Heap (Non-Primitive)
-// Stack -> gives copy of the original
-// Heap -> gives the original(reference) of value
-
-let myYoutubeName = "hiteshchoudharydotcom"
-
-let anotherName = myYoutubeName
-anotherName = "chaiaurcode"
-
-console.log(anotherName);
-console.log(myYoutubeName);
-
-let userOne = {
-    email: "user@google.com",
-    upi: "user@ybl"
-}
-
-let userTwo = userOne
-
-userTwo.email = "prashu@google.com"
-
-console.log(userOne.email);
-console.log(userTwo.email);
+console.log(typeof scoreValue);
+console.log(typeof isLoggedIn);
+console.log(typeof outsideTemp); // null's datatype is object
+console.log(typeof userEmail);
+console.log(typeof bigNumber);
+console.log(typeof heros); // 
+console.log(typeof myObj);
+console.log(typeof myFunction);
