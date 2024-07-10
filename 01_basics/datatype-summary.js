@@ -39,6 +39,6 @@ console.log(typeof isLoggedIn);
 console.log(typeof outsideTemp); // null's datatype is object
 console.log(typeof userEmail);
 console.log(typeof bigNumber);
-console.log(typeof heros); // 
-console.log(typeof myObj);
-console.log(typeof myFunction);
+console.log(typeof heros); // array's datatype is Object
+console.log(typeof myObj); // Object's datatype is Object
+console.log(typeof myFunction); // Function's datatype is function
