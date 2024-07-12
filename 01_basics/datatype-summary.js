@@ -25,6 +25,7 @@ const bigNumber = 3465865646654544515155n
 // datatypes of all non primitive are Object
 
 const heros = ["shaktiman", "naagraj", "doga"]
+
 let myObj = {
     name: "hitesh",
     age: 22,
