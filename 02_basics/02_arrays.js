@@ -26,7 +26,7 @@ console.log(Array.isArray("Hitesh"))
 //converts string into array
 console.log(Array.from("Hitesh"))
 
-// convert Object into 
+// convert Object into array
 console.log(Array.from({name: "Hitesh"})) // Interesting
  
 // convert multiple variables/arrays into a single array
