@@ -1,14 +1,16 @@
-// singleton object => using constructor method
-// object.create
+// singleton -> when u make from a constructor
+Object.create
 
-// object literals
+
+// If declare like a literals then singleton nhi banta hai
+// Object literals
 
 const mySym = Symbol("key1")
 
 const JsUser = {
-    name: "hitesh",
+    name: "Hitesh",
     "full name": "Hitesh Choudhary",
-    [mySym]: "mykey1",
+    [mySym]: "mykey1", // how to refer a symbol as a key 
     age: 18,
     location: "Jaipur",
     email: "hitesh@google.com",
@@ -19,11 +21,11 @@ const JsUser = {
 // console.log(JsUser.email)
 // console.log(JsUser["email"])
 // console.log(JsUser["full name"])
-// console.log(JsUser[mySym])
+// console.log(JsUser[mySym]); // call a symbol from a object
 
-JsUser.email = "prashu@chatgpt.com"
+JsUser.email = "hitesh@chatgpt.com"
 // Object.freeze(JsUser)
-JsUser.email = "prashu@microsoft.com"
+JsUser.email = "hitesh@microsoft.com"
 // console.log(JsUser);
 
 JsUser.greeting = function(){
@@ -35,3 +37,4 @@ JsUser.greetingTwo = function(){
 
 console.log(JsUser.greeting());
 console.log(JsUser.greetingTwo());
+
