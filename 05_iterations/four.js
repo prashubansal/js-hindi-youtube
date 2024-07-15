@@ -1,33 +1,32 @@
-//"for in" loop => returns the "key" of any object 
-
+// "for in" -> can iterate on object, array 
+// returns keys of elements
 
 const myObject = {
     js: 'javascript',
-    cpp: 'C++',
+    cpp: 'c++',
     rb: 'ruby',
     swift: 'swift by apple'
 }
+
+// console.log(typeof myObject.js);
+
 for (const key in myObject) {
-    // console.log(`${key} shortcut is for ${myObject[key]}`);
-    // console.log(typeof key);
-    // console.log(myObject[key])
-    // console.log(typeof myObject);
+    // console.log(`${key} shortcut is for ${myObject[key]}`)
 }
 
-const programming = ["js", "ruby", "python", "java", "cpp"]
+const programming = ["js", "ruby", "py", "java", "cpp"]
 
-// for (const key in programming) {
-//     console.log(programming[key]);
+for (const key in programming) {
+    // console.log(programming[key]);
+}
+
+
+// cannot iterate on map
+// const map = new Map()
+// map.set('IN', "India")
+// map.set('USA', "United States Of America")
+// map.set('FR', "France")
+
+// for (const key in map) {
+//     console.log(key);
 // }
-
-
-// Map is not iteratable, hence "for in" not working on map
-const map = new Map()
-map.set('IN', "India")
-map.set('USA', "United States of America")
-map.set('FR', "France")
-map.set('IN', "India")
-
-for (const key in map) {
-    console.log(key);
-}
