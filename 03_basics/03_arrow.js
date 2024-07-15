@@ -1,3 +1,5 @@
+// This -> refers the current context, so you can access all the variables defined under the current scope.
+
 const user = {
     username: "hitesh",
     price: 999,
@@ -6,6 +8,7 @@ const user = {
         console.log(`${this.username} , welcome to website`);
         console.log(this);
     }
+
 }
 
 // user.welcomeMessage()
@@ -14,33 +17,36 @@ const user = {
 
 // console.log(this);
 
-//This => cannot refer current context of the function
-// function chai(){
-//     let username = "hitesh"
-//     console.log(this.username);
-// }
+
+// ++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// not able to use "this" in the function
+// "this" is not an empty object inside a function 
+function chai(){
+    let username = "hitesh"
+    console.log(this.username);
+}
 
 // chai()
 
-// const chai = function(){
-//     let username = "hitesh"
-//     console.log(this.username);
-// }
 
-//++++++++++++++++++ Arrow function ++++++++++++++++++
-
-const chai = () => {
+// +++++++++++++++++++ Arrow function +++++++++++++++++++++++
+// "this" returns an empty object
+// cannot use "this" inside a arrow function
+const chai2 =  () => {
     let username = "hitesh"
     console.log(this);
 }
 
-// chai()
+// chai2()
 
 // const addTwo = (num1, num2) => {
 //     return num1 + num2
 // }
 
-// Implicit Return
+
+// if use {} -> have to use "return" keyword
+// if use () -> no need to write "return" keyword
 // const addTwo = (num1, num2) => num1 + num2
 
 // const addTwo = (num1, num2) => (num1 + num2)
@@ -49,8 +55,4 @@ const addTwo = (num1, num2) => ({username: "hitesh"})
 
 
 console.log(addTwo(3, 4))
-
-const myArray = [2, 5, 3, 7, 8]
-
-// myArray.forEach(() => ())
 
