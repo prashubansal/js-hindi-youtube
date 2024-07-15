@@ -1,6 +1,6 @@
 // var c = 300
 let a = 300
-if (true){
+if (false){
     let a = 10
     const b = 20
     // console.log("Inner:", a);
@@ -11,6 +11,7 @@ if (true){
 // console.log(b);
 // console.log(c);
 
+
 function one(){
     const username = "hitesh"
 
@@ -19,35 +20,36 @@ function one(){
         console.log(username);
     }
     // console.log(website);
-
-    two()
+    
+    // two()
 }
 
 // one()
 
-if(true){
+if (true){
     const username = "hitesh"
     if(username === "hitesh"){
         const website = " youtube"
-        // console.log(username + website);
+        // console.log(username + website)
     }
-    // console.log(website);
+    // console.log(website)
 }
+// console.log(username)
 
-// console.log(username);
+// +++++++++++++++ interesting ++++++++++++++++++++++
 
-
-// +++++++++++++++++++ interesting +++++++++++
-
-//can use the function before decalaration
 console.log(addone(5))
 
+// can access them before intitialization
 function addone(num){
     return num + 1
 }
 
-//Hoisting => cannot use the function before decalartion
+
 addTwo(5)
+
+// sometimes we call them "expression"
+// cannot access them before intitialization
 const addTwo = function(num){
     return num + 2
 }
