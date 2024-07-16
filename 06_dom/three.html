@@ -19,8 +19,15 @@
     // div.innerText = "Chai aur code"
     const addText = document.createTextNode("Chai aur code")
     div.appendChild(addText)
-    
+
 
     document.body.appendChild(div)
 </script>
 </html>
+
+// prefer using (createTextNode and then append it) over
+// inerHTML/innerText.
+// because it will traverse the whole tree when using innerHTML/innerText.
+
+// prefer using setAttribute over clasname/id 
+// overwriting and traversing the whole tree structure could be avoided.
