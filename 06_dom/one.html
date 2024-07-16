@@ -6,17 +6,17 @@
     <style>
         .bg-black{
             background-color: #212121;
-            color: #fff;
+            color: #fff
         }
     </style>
 </head>
 <body class="bg-black">
-    <div>
-        <h1 id="title" class="heading">DOM learnig on Chai aur code <span style="display: none;">test text</span></h1>
+    <div >
+        <h1 id="title" class="heading">DOM learning on Chai aur code <span style="display: none;">test text</span></h1>
         <h2>Lorem ipsum dolor sit.</h2>
-        <h2>Lorem ipsum dolor sit amet.</h2>
-        <h2>Lorem ipsum dolor sit amet.</h2>
-        <p>Lorem ipsum dolor sit amet.</p>
+        <h2>Lorem ipsum dolor sit.</h2>
+        <h2>Lorem ipsum dolor sit.</h2>
+        <p>Lorem ipsum dolor sit amet.</p>   
         <input type="password" name="" id="">
 
         <ul>
@@ -28,3 +28,22 @@
     </div>
 </body>
 </html>
+
+
+
+
+
+
+
+// HTML Collection & NodeList -> not an array
+// innerHTML -> supports "HTML tags"
+// innerText & textContent -> doesn't support the "HTML tags"
+
+// document.getElementById('idname')
+// document.querySelector('tagname') -> gives u first tag
+// document.querySelector('#idname')
+// document.querySelector('.classname')
+// document.querySelector('tagename').style.stylename = 'value' -> set the style for that element
+// document.querySelectorAll('tagname') -> returns a NodeList of that tags/elements.
+// document.getElementByClassName('clasname') -> returns a HTMLCollection.
+// convert HTMLCollection into array -> Array.from(HTMLCollection).
