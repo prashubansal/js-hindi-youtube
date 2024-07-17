@@ -10,11 +10,15 @@
     <button id="stop">Stop</button>
 </body>
 <script>
+    // setTimeout -> calls an API, not  part of "JS engine"
+    // clearTimeout 
+        // stops the setTimeout execution
+        // take reference of the setTimeout
     const sayHitesh = function(){
         console.log("Hitesh");
     }
-    const changeText = function (){
-        document.querySelector('h1').innerHTML = "best JS seriess"
+    const changeText = function(){
+        document.querySelector('h1').innerHTML = "Best JS series"
     }
 
     const changeMe = setTimeout(changeText, 2000)
