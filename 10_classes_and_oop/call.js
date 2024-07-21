@@ -5,8 +5,8 @@ function SetUsername(username){
 }
 
 function createUser(username, email, password){
-    // ye kebal reference gya hai
-    // call nhi hua hai
+    // ye call hua hai
+    // but vo values ko hold karke rakhta hai outer function ke liye and unki access bhi milti hai
     SetUsername.call(this, username)
     
     this.email = email
